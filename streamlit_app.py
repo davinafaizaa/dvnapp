@@ -4,10 +4,5 @@ st.title("🎈 Davina's new app")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
-st.header("_Streamlit_ is :blue[cool] :sunglasses:")
-st.header("This is a header with a divider", divider="gray")
-st.header("These headers have rotating dividers", divider=True)
-st.header("One", divider=True)
-st.header("Two", divider=True)
-st.header("Three", divider=True)
-st.header("Four", divider=True)
+color = st.color_picker("Pick A Color", "#00f900")
+st.write("The current color is", color)
