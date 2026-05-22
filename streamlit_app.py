@@ -8,8 +8,8 @@ st.write(
 color = st.color_picker("Pick A Color", "#000000")
 st.write("The current color is", color)
 
-from numpy.random import default_rng as rng
+from vega_datasets import data
 
-df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["a", "b", "c"])
+source = data.barley()
 
-st.bar_chart(df)
+st.bar_chart(source, x="variety", y="yield", color="site", horizontal=True)
