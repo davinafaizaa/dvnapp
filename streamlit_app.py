@@ -5,7 +5,7 @@ st.title("🎈 Davina's new app")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
-color = st.color_picker("Pick A Color", "#000000")
+color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
 
 from numpy.random import default_rng as rng
@@ -17,15 +17,3 @@ df = pd.DataFrame(
         "col3": rng(1).standard_normal(20),
     }
 )
-
-st.bar_chart(
-    df,
-    x="col1",
-    y=["col2", "col3"],
-    color=["#EFDFF5", "#0000FF"],)
-
-from vega_datasets import data
-
-source = data.barley()
-
-st.bar_chart(source, x="variety", y="yield", color="site", horizontal=True)
