@@ -8,3 +8,12 @@ st.write(
 font = "Serif"
 color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
+
+[theme]
+font = "sans-serif"
+headingFont = "sans-serif"
+codeFont = "monospace"
+[theme.sidebar]
+font = "sans-serif"
+headingFont = "sans-serif"
+codeFont = "monospace"
