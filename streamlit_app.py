@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-with open( "app\style.css" ) as css:
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-
 st.title("🎈 Davina's new app")
 st.write('<p style="font-size:30px; color:#232E75;">Color Picker</p>',
          unsafe_allow_html=True)
