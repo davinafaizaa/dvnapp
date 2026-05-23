@@ -8,12 +8,11 @@ st.write(
 color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
 
-from numpy.random import default_rng as rng
-
-df = pd.DataFrame(
-    {
-        "col1": list(range(20)),
-        "col2": rng(0).standard_normal(20),
-        "col3": rng(1).standard_normal(20),
-    }
+st.markdown(
+    f"""
+    <div style="font-family: 'Courier New', Courier, monospace; background-color: #f0f2f6; padding: 15px; border-radius: 5px;">
+        <pre>{kode}</pre>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
