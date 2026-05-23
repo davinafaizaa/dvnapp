@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
 html, body, [class*="css"] {
     font-family: 'Roboto', sans-serif; 
     font-size: 18px;
@@ -13,5 +14,5 @@ unsafe_allow_html=True)
 color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
+
 
