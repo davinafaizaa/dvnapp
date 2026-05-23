@@ -8,5 +8,4 @@ st.write(
 color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
 
-[theme]
 font = "monospace"
