@@ -7,5 +7,5 @@ st.write(
 )
 color = st.color_picker("Pick A Color", "#F5DFEE")
 st.write("The current color is", color)
-st.background ("F5DFEE")
+st.background_color ("F5DFEE")
 
